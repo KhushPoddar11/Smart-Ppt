@@ -28,7 +28,7 @@ while True:
     pathFullImage = os.path.join(folderPath,pathImages[imgNo])
     currentImg = cv2.imread(pathFullImage)
 
-    hands, img = detector.findHands(img) #use ', flipType=False' to flip the camera.
+    hands, img = detector.findHands(img, flipType=False) #use ', flipType=False' to flip the camera.
     cv2.line(img,(0, gestureThreshold),(width,gestureThreshold),(0,255,0), 5)
 
 
