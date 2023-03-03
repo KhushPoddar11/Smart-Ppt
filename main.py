@@ -1,5 +1,6 @@
 import cv2, os
 from cvzone.HandTrackingModule import HandDetector
+import mediapipe as mp
 
 width, height = 1280, 720
 folderPath = "Presentation"
